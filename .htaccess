@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+Options +SymLinksIfOwnerMatch
+    RewriteEngine on
+    RewriteCond %{REQUEST_URI} !^dfa_101/public
+    RewriteRule ^(.*)$ dfa_101/public/$1 [L]
+</IfModule>
